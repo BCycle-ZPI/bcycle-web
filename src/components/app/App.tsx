@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.scss";
 import { AppBar, Toolbar, Typography } from "@material-ui/core";
-import GroupTripInfo from "../group-trip-info/GroupTripInfo";
+import GroupTripInfo from "../../containers/group-trip-info/GroupTripInfo";
 import { Route, Switch } from "react-router";
 import NotFound from "../not-found/NotFound";
-import TripInfo from "../trip-info/TripInfo";
+import PrivateTripInfo from "../../containers/private-trip-info/PrivateTripInfo";
 import { BrowserRouter } from "react-router-dom";
 
 export default function App() {
@@ -23,7 +23,7 @@ export default function App() {
             <GroupTripInfo />
           </Route>
           <Route path={'/trip/:tripId'}>
-            <TripInfo />
+            <PrivateTripInfo />
           </Route>
           <Route>
             <NotFound />
