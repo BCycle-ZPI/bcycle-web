@@ -1,3 +1,10 @@
+export interface PrivateTrip {
+    subject: Person;
+    measures: Measures
+    photosUrls: string[];
+    path: PathPoint[];
+}
+
 export interface GroupTrip {
     tripName: string;
     subject: Person;

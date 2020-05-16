@@ -3,7 +3,7 @@ import React from 'react';
 import './TripDetails.scss';
 import PersonHeader from '../person-header/PersonHeader';
 import TripMeasure from '../trip-measure/TripMeasure';
-import {Person} from '../../core/group-trip';
+import {Person} from '../../core/model';
 
 interface TripHeaderProps {
   tripName: string;
